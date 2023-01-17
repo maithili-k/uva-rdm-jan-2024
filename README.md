@@ -1,8 +1,3 @@
-# uva-rdm-jan-2023
-
-# Course material for iRODS in HPC environments
-
-
 ## Goal
 
 Learning about basic data management principles. Using the Research Drive and Yoda services from SURF to test/implement some of the principles in a hands-on session.
