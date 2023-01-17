@@ -17,9 +17,9 @@ The full license text can be found in [LICENSE](LICENSE).
 ## Premise
 You heard the talk about data management principles and problems associated with in managing data. Let us see what it means in practive to 'manage data'. During your degree course you handle study material (think notes,papers, book pdfs, etc.), scripts of a fellow student/online material. You also make your study notes, projects and associated material, write your own scripts. Think of all this material as data (including your software).  
 
-1. You create/collect/observe "data" for your study from 'somewhere' 
+1. You create/collect "data" for your study from 'somewhere' 
 2. You need to save/upload this data 'somewhere' safely
-3. You compute/analyze this data 'somehere' (laptop, a compute cluster,etc.) either on your own or in a collaboration
+3. You compute/analyze this data 'somewhere' (laptop, a compute cluster,etc.) either on your own or in a collaboration
 4. You publish the results 'somewhere' (e.g., github)
 5. 'Something' should happen to this data and the results e.g., data stays on hard disk till disks go corrupt, uploaded 'somewhere' for reuse by 'someone' hopefully (including yourself)
 
@@ -40,7 +40,7 @@ You can comfortably go through this exercise on your own and more importantly, a
 
 ## 2. Login to Lisa
 
-In this course we will use the Lisa login node as our user interface where Research Drive can be mounted, and the node has the CLI tool icommands installed to push data into Yoda. 
+In this course we will use the Lisa (a batch processing cluster at SURF) login node as our user interface where Research Drive can be mounted, and the node has the CLI tool icommands installed to push data into Yoda.
 
 Login to the Lisa compute cluster with your appropriate credentials:
 
@@ -51,6 +51,13 @@ ssh lcur#@lisa.surfsara.nl
 ## 3. Mount Research Drive on Lisa/ Download data from research Drive to Lisa (Jorik)
 
 ## 4. Run analysis on Lisa (Maithili/Jorik)
+In the above section you just performed partly steps 1 and 2 of the premise and have the data present locally. To analyze the data, you also need the software/scripts. 
+
+
+```sh
+mkdir results
+wget https://raw.githubusercontent.com/.sh
+```
 
 ## 5. Push data into Yoda (Maithili)
 
