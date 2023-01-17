@@ -51,12 +51,12 @@ ssh lcur#@lisa.surfsara.nl
 ## 3. Mount Research Drive on Lisa/ Download data from research Drive to Lisa (Jorik)
 
 ## 4. Run analysis on Lisa (Maithili/Jorik)
-In the above section you just performed partly steps 1 and 2 of the premise and have the data present locally. To analyze the data, you also need the software/scripts. 
+In the above section you just performed partly steps 1 and 2 of the premise and have the data present locally. To analyze the data, you also need the software/scripts. Then you wouldhave completed steps 1 and 2 of premise and we will now proceed to step 3 - data analysis.
 
 
 ```sh
 mkdir results
-wget https://raw.githubusercontent.com/.sh
+wget https://raw.githubusercontent.com/maithili-k/uva-rdm-jan-2023/tree/main/data-creation-and-analysis/lisa-job.sh
 ```
 
 ## 5. Push data into Yoda (Maithili)
