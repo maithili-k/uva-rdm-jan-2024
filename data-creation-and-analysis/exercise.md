@@ -2,7 +2,7 @@
 <br><br>
 
 
-# iRODS basic data handling 
+# Data creation/reuse and analysis using Research Drive and Lisa
 
 **Authors**
 - Maithili Kalamkar Stam (SURF)
