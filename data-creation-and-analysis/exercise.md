@@ -50,7 +50,7 @@ ssh lcur#@lisa.surfsara.nl
 
 ## 3. Mount Research Drive on Lisa/ Download data from research Drive to Lisa (Jorik)
 
-## 4. Run analysis on Lisa
+## 4. Run analysis on Lisa (Maithili/Jorik)
 
-## 5. Push data into Yoda 
+## 5. Push data into Yoda (Maithili)
 
