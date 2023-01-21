@@ -77,7 +77,4 @@ Once you have acquired the data (steps 1 and 2 of the premise, first step of the
 wget https://raw.githubusercontent.com/maithili-k/uva-rdm-jan-2023/tree/main/data-creation-and-analysis/lisa-job.sh
 ```
 
-## 5. Push data into Yoda
 
-rclone obscure password
-rclone move alice.txt :webdav:research-train-jun22/maithili-test/ --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=maithili.kalamkarstam@surf.nl --webdav-pass=myobscurepassword
