@@ -42,7 +42,7 @@ There are several ways to connect to Yoda (e.g., via a [network disk](https://se
 You shall have received the username and password with which you can login to the [SURF's Yoda service](https://scuba-yoda.irods.surfsara.nl/). 
 
 ## 3. Familiarize yourself with the Portal
-You can view the Yoda portal via any browser. Once you have logged in, please familiarize yourself with the Yoda environment. The details can be found in our [Yoda documentation](https://servicedesk.surf.nl/wiki/display/WIKI/Getting+started+with+the+Yoda+portal). 
+You can view the Yoda portal via any browser. Once you have logged in, please familiarize yourself with the Yoda environment. The details can be found in our Yoda documentation [here](https://servicedesk.surf.nl/wiki/display/WIKI/Getting+started+with+the+Yoda+portal). 
 
 > **_Food for thought:_**
 >
