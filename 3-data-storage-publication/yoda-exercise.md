@@ -107,3 +107,7 @@ Now that you have an immutable dataset archived in the Vault of Yoda, you may pr
 > * Can I publish only my metadata? 
 > * The data used in the exercise is publicly available, what if this was personal/sensitive/medical data? How do researchers in that domain find data, evaluate its reusability, share data and collaborate? 
 > * Do you know of other data repositories?
+
+
+## Reflection
+You have just gone through a typical life cycle of data, particularly in the field of research. Every action you took brought you a little closer to doing data management in a correct way. Data management is getting more and more important and you have learned quite a lot about how it can be done, and are better equipped to put it into practice!
