@@ -76,3 +76,34 @@ Check with rclone if the upload succeeded. Now go to the Yoda portal and see if 
 >
 > * Why did the data end up in Research and not Vault? 
 
+## 5. Archive your uploaded results in Yoda
+
+In Yoda, when you archive the data, several steps need to happen before the data can be considered archived. These can be described as follows:
+1. You need to consider if the current data is complete and well structured as once archived you will not be able to make any changes to it. This step is called creating a data package
+2. You need to enrich the metadata such that it can be used by anyone beside you and in the long term
+3. Then you can submit the data package to the Vault
+4. The data manager will then assess the data package and then either approve or suggest improvements. The approved data packages are published
+
+You can find the necessary details to perform those actions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+archive+data+packages). Please go through the food for thought section below before archiving the data.
+
+> **_Food for thought:_**
+>
+> * What is the difference between data storage and data archiving? When do you do one or the other?
+> * What is the role of metadata here? 
+> * Think of all the steps you performed so far, and now think how you would describe this as metadata that can be understood by anyone
+> * What would you like to know about the data/software if you were to reuse someone else's data? This is metadata
+> * Can you think of a standardized template that you can be used for metadata in your field of work? Yoda can support various metadata template
+
+## 6. Publish your uploaded results in Yoda
+
+Now that you have an immutable dataset archived in the Vault of Yoda, you may proceed to with instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+publish+data+packages)
+
+> **_Food for thought:_**
+>
+> * What is an immutable dataset? 
+> * Is is necessary to publish a dataset, isn't archiving it enough? What's the difference between these two? 
+> * What is a DOI? Have you encountered this term before?
+> * Do I HAVE to publish my dataset? Is it the same as making the data publicly accessible? What about GDPR?
+> * Can I publish only my metadata? 
+> * The data used in the exercise is publicly available, what if this was personal/sensitive/medical data? How do researchers in that domain find data, evaluate its reusability, share data and collaborate? 
+> * Do you know of other data repositories?
