@@ -17,24 +17,24 @@ We will continue following the steps you read in the [premise](https://github.co
 >
 > * In your daily work, what do you typically do with data/software that you used for your work (e.g., assignments, projects)? Store it on dropbox, SURFdrive, on your computer, github, etc.
 > * Do you think it can be used by someone else, how can you ensure that?
-> * Let's say, you have made your work publicly available (e.g., on github). Do you think you have provided sufficient details (think traceability, versioning, reproducability, information about data aka metadata, licence, GDPR, etc.) for it to be of enough quality to be reusable? If this 'metadata' is not rich enough/informative enough, can it be put to use? Would you remember all the details a year from now?
-> * Now extend this problem to all scientific domains where thousands of researchers build their work on existing research and data spread across Exabytes of data in billions of files, how is it done there? This is why research data management is important!
+> * Let's say, you have made your work publicly available (e.g., on github). Do you think you have provided sufficient details (think traceability, versioning, reproducability, information about data aka metadata, licence, GDPR, etc.) for it to be of enough quality to be reusable? If this 'metadata' is not rich enough/informative enough, can the data be reused? Would you remember all the details a year from now?
+> * Now extend this problem to all scientific domains where thousands of researchers build their work on existing research and data spread across Exabytes of data in billions of files, how is it done there? This is why research data management is important! And knowing which tools can support you there!
 
 ## 1. Prerequisites
 
-- Module 2 [exercise](https://github.com/maithili-k/uva-rdm-jan-2023/blob/main/2-data-creation-and-analysis/lisa-researchdrive-exercise.md) is completed
+- Module 2 [exercise](https://github.com/maithili-k/uva-rdm-jan-2023/blob/main/2-data-creation-and-analysis/lisa-researchdrive-exercise.md) is completed i.e., result has been pushed to Yoda
 - You have an account on Yoda at SURF
 
 ## 2. Login to the Yoda portal
 
-Yoda is a research data management service that enables researchers to securely deposit, share, publish and preserve large amounts of research data during all stages of a research project.
+Yoda is a research data management service that enables researchers to securely deposit, share, publish and preserve large amounts of research data during all stages of a research project. In this tutorial you pulled the data from Research Drive, but could also be pulled from an existing dataset already available in Yoda (think resuability).
 
 There are several ways to connect to Yoda (e.g., via a [network disk](https://servicedesk.surf.nl/wiki/display/WIKI/Connecting+to+Yoda+via+network+disk) or clients such as [icommands](https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=19824798), rclone or via a webportal). In this tutorial, you will upload data to Yoda with rclone and then use the web portal to publish the results.
 
 You shall have received the username and password with which you can login to the [SURF's Yoda service](https://scuba-yoda.irods.surfsara.nl/). 
 
 ## 3. Familiarize yourself with the Portal
-You can view the Yoda portal via any browser. Once you have logged in, please familiarize yourself with the Yoda environment. The details can be found in our Yoda documentation [here](https://servicedesk.surf.nl/wiki/display/WIKI/Getting+started+with+the+Yoda+portal). 
+You can access the [Yoda portal](https://scuba-yoda.irods.surfsara.nl/) via any browser. With the username/password credentials provided in the above step, please login and familiarize yourself with the Yoda environment. These portal details can be found in our Yoda documentation [here](https://servicedesk.surf.nl/wiki/display/WIKI/Getting+started+with+the+Yoda+portal). 
 
 > **_Food for thought:_**
 >
@@ -42,16 +42,16 @@ You can view the Yoda portal via any browser. Once you have logged in, please fa
 > * Do you already use something similar in your daily work? If not, could Yoda be benificial to you?
 
 ## 4. Upload your results to Yoda
-Now that you know a little more about Yoda and are little familiar with the environment let us push some data into Yoda. You ran analysis on Lisa and have a result to show. In this step you shall upload the result output from Lisa to Yoda. 
+Now that you know a little more about Yoda and are a little bit familiar with the environment, let us push some data into Yoda from Lisa. 
 
-The Yoda username/password you received allows you to interact with Yoda via a browser. However, from the Lisa login node we shall use a command line client to upload data. You already used rclone to interact with Research Drive and will use the same client to upload your results to Yoda, but with Yoda's data access password. You can find the insrtructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+get+a+Data+Access+Password) to generate a temporary password. 
+The Yoda username/password you received allows you to interact with Yoda via a browser. From the Lisa login node we shall use a command line client to upload data. You already used rclone to interact with Research Drive and will use the same client to upload your results to Yoda, but with Yoda's data access password. You can find the insrtructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+get+a+Data+Access+Password) to generate a temporary password. 
 
-The password cannot be reaily used as rclone client requires an "obscurated" password:
+The password cannot be readily used as rclone client requires an "obscurated" password:
 
 ```
 rclone obscure passwordstring
 ```
-The output generated is your obscured password. Let us test if you can access Yoda with rclone. (Check if this clashes with Research Drive rclone config clashes)
+The output generated is your obscured password. Let us test if you can access Yoda with rclone. In the command below, you are using rclone without creating a configuration as for Research Drive (but you can also create a configuration for Yoda)
 
 ```
 rclone ls :webdav: --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=your-yoda-account@something.nl --webdav-pass=myobscurepassword
@@ -60,9 +60,9 @@ rclone ls :webdav: --no-check-certificate --webdav-url=https://scuba-data.irods.
 Now with the following command, upload your result(s) to Yoda. 
 
 ```
-rclone move result.txt :webdav:path/to-upload --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=your-yoda-account@something.nl --webdav-pass=myobscurepassword
+rclone move result.txt :webdav:research-uva-2023/yourfolder --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=your-yoda-account@something.nl --webdav-pass=myobscurepassword
 ```
-Check with rclone if the upload succeeded. Now go to the Yoda portal and see if you can fild your uploaded result.
+Check with rclone ls command if the upload succeeded. Now go to the Yoda portal and see if you can fild your uploaded result.
 
 > **_Food for thought:_**
 >
@@ -71,12 +71,12 @@ Check with rclone if the upload succeeded. Now go to the Yoda portal and see if 
 ## 5. Archive your uploaded results in Yoda
 
 In Yoda, when you archive the data, several steps need to happen before the data can be considered archived. These can be described as follows:
-1. You need to consider if the current data is complete and well structured as once archived you will not be able to make any changes to it. This step is called creating a data package
+1. You need to consider if the current data is complete and well structured as once archived you should avoid making any changes to it. This step is called creating a data package
 2. You need to enrich the metadata such that it can be used by anyone beside you and in the long term
 3. Then you can submit the data package to the Vault
-4. The data manager will then assess the data package and then either approve or suggest improvements. The approved data packages are published
+4. The data manager will then assess the data package and then either approve, reject or suggest improvements. The approved data packages are published
 
-You can find the necessary details to perform those actions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+archive+data+packages). Please go through the food for thought section below before archiving the data.
+Please go through the food for thought section below before archiving the data.
 
 > **_Food for thought:_**
 >
@@ -85,6 +85,8 @@ You can find the necessary details to perform those actions [here](https://servi
 > * Think of all the steps you performed so far, and now think how you would describe this as metadata that can be understood by anyone
 > * What would you like to know about the data/software if you were to reuse someone else's data? This is metadata
 > * Can you think of a standardized template that you can be used for metadata in your field of work? Yoda can support various metadata template
+
+You can find the necessary details to perform the archivng steps [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+archive+data+packages).
 
 ## 6. Publish your uploaded results in Yoda
 
@@ -97,8 +99,9 @@ Now that you have an immutable dataset archived in the Vault of Yoda, you may pr
 > * What is a DOI? Have you encountered this term before?
 > * Do I HAVE to publish my dataset? Is it the same as making the data publicly accessible? What about GDPR?
 > * Can I publish only my metadata? 
-> * The data used in the exercise is publicly available, what if this was personal/sensitive/medical data? How do researchers in that domain find data, evaluate its reusability, share data and collaborate? 
-> * Do you know of other data repositories?
+> * The data used in this exercise is publicly available and can be reused as per the licence, but what if this was personal/sensitive/medical data? How do researchers in that domain find data, evaluate its reusability, share data and collaborate? 
+> * Can you search (think data discovery) for the datasets from your fellow participants in this course? Are they reusable, can you find such a dataset?
+> * Do you know of other data repositories? Can you download data from there, or make your dataset/metadata findable in those repositories?
 
 
 ## Reflection
