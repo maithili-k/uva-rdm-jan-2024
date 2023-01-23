@@ -21,7 +21,7 @@ You heard the talk about data management principles and problems associated with
 2. You need to save/upload this data 'somewhere' safely
 3. You compute/analyze this data 'somewhere' (laptop, a compute cluster,etc.) either on your own or in a collaboration
 4. You publish the results 'somewhere' (e.g., github)
-5. 'Something' should happen to this data and the results e.g., data stays on hard disk till disks go corrupt, uploaded 'somewhere' for reuse by 'someone' hopefully (including yourself)
+5. 'Something' should happen to this data and the results e.g., data stays on hard disk till disks go corrupt, uploaded 'somewhere' for discovery and reuse by 'someone' hopefully (including yourself)
 
 > **_Food for thought:_**
 >
