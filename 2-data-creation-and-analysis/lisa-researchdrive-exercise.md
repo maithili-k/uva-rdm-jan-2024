@@ -31,7 +31,7 @@ You heard the talk about data management principles and problems associated with
 
 
 ### What we expect you to do
-In this assignment we will focus on data management in the active phase of research. You can comfortably go through this exercise on your own pace. We will take stops in intervals to see if we are all more or less on the same page and discuss together the 'Food for thought' questions. You can of course always ask questions or help if you cannot proceed.
+In this assignment we will focus on data management in the active phase of research. Imagine you are part of a group of researchers that is analysing the literary works of Lewis Carol. Your task is to analyse Alice in Wonderland. You get access to the full text via Research Drive, use Lisa to analyse the text, and share the results with your collaborators. You can comfortably go through this exercise on your own pace. We will take stops in intervals to see if we are all more or less on the same page and discuss together the 'Food for thought' questions. You can of course always ask questions or help if you cannot proceed.
 
 ## 1. Prerequisites
 
@@ -100,15 +100,16 @@ cat result/result-XXXXXXXXX.txt
 > * Downloading and uploading results is a manual process in our current workflow. Is it possible to do this as part of the job? Why would or wouldn't you do this?
 
 ## 5. Share the results
-Fix this part here - Research is mostly a collaborative effort. This means that once you ran your analysis you want to share the results with other collaborators. Start with uploding your result to your projectfolder on Research Drive:
+Research is mostly a collaborative effort. This means that once you ran your analysis you want to share the results with other collaborators. Start with uploding your result to your _own_ projectfolder on Research Drive:
 
 ```
 rclone copy result/result-XXXXXXXXX.txt "RD:Demo XX (Projectfolder)"
 ```
 
-Share the result file, or maybe even the source, with a group that has a different part of Alice in Wonderland. You can use the [Research Drive documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+share+a+folder+or+file) to find information on how to do that.
+Share the result file, or maybe even the source, with the demo account sitting next to you. You can use the [Research Drive documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+share+a+folder+or+file) to find information on how to do that.
 
 > **_Food for thought:_**
 > * If people want to reproduce the results you shared what information do they need? How do you make sure that they _can_ reproduce your work?
+> * Are there differences between your result and that of other groups? Do you know why the results are different? What has changed in the wordcounting algorithm?
 
 
