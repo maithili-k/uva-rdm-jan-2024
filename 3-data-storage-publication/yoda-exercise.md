@@ -22,7 +22,6 @@ We will continue following the steps you read in the [premise](https://github.co
 
 ## 1. Prerequisites
 
-- Module 2 [exercise](https://github.com/maithili-k/uva-rdm-jan-2023/blob/main/2-data-creation-and-analysis/lisa-researchdrive-exercise.md) is completed i.e., result has been pushed to Yoda
 - You have an account on Yoda at SURF
 
 ## 2. Login to the Yoda portal
