@@ -110,7 +110,7 @@ rclone copy result/result-XXXXXXXXX.txt "RD:Demo XX (Projectfolder)"
 Share the result file, or maybe even the source, with a group that has a different part of Alice in Wonderland. You can use the [Research Drive documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+share+a+folder+or+file) to find information on how to do that.
 
 > **_Food for thought:_**
-* If people want to reproduce the results you shared what information do they need? How do you make sure that they _can_ reproduce your work?
+> * If people want to reproduce the results you shared what information do they need? How do you make sure that they _can_ reproduce your work?
 
 ## 6. Get the final dataset
 To continue to the next part of the assignment you need to have a dataset. Ideally you have collected the information from three acts and have combined the frequency tables, or ran a full analysis on the source of all acts. If you didn't manage to do that, no worries, you can continue with your own results file or even a dummy text file.
