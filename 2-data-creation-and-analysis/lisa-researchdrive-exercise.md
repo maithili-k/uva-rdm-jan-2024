@@ -31,7 +31,7 @@ You heard the talk about data management principles and problems associated with
 
 
 ### What we expect you to do
-You can comfortably go through this exercise on your own and more importantly, at your own pace. We will take stops in intervals to see if we are all more or less on the same page and discuss together the 'Food for thought' questions. You can of course always ask questions or help if you cannot proceed.
+In this assignment we will focus on data management in the active phase of research. You can comfortably go through this exercise on your own pace. We will take stops in intervals to see if we are all more or less on the same page and discuss together the 'Food for thought' questions. You can of course always ask questions or help if you cannot proceed.
 
 ## 1. Prerequisites
 
@@ -55,7 +55,7 @@ We start with the first step of the Research Data Life Cycle: acquire data that 
 Once you have configured rclone you can inspect the remote location:
 
 ```
-lcur2612@login4:~$ rclone ls "RD:"
+lcurXXXX@loginX:~$ rclone ls "RD:"
   3308028 Training (Projectfolder)/Hands-on.pdf
   9896935 Training (Projectfolder)/Research Drive Onboarding Training -Basic.pdf
  12730442 Training (Projectfolder)/ResearchDriveTraining-Onboarding.pdf
@@ -65,16 +65,54 @@ lcur2612@login4:~$ rclone ls "RD:"
 Each group will see one of the three acts. This needs to be copied to your home folder:
 
 ```sh
-rclone copy "RD:UvA HPC Course (Projectfolder)/Alice in Wonderland Act I/alice-in-wonderland-act-i.txt" source.txt
+rclone copy "RD:UvA HPC Course (Projectfolder)/Alice in Wonderland Act I" input
 ```
 
 There are a couple of things to note here. First, the source path is placed within `""`. This is to make sure that the shell does not interpret all spaces and other possible characters. Second, the desitnation file has a different name, this is important for the scripts you are using in the later steps.
+
+> **_Food for thought:_**
+> * We are using Research Drive via rclone, in our [documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+upload+or+download+your+files) you can find multiple methods to move data around. What are the advantages and disadvantages of each method and when would you recommend one over the other?
+> * Lisa has multiple filesystesms, in our [documentation](https://servicedesk.surf.nl/wiki/display/WIKI/Lisa+hardware+and+file+systems) you can find more information. What would be the right place for storing the data from this assignment? What type of data would you store on each filesystem?
+> * Research Drive and local file systems have different use cases. When would you use on over the other?
 
 ## 4. Run analysis on Lisa
 Once you have acquired the data (steps 1 and 2 of the premise, first step of the Research Data Life Cycle), it is time for the next step: analyzing the data. To analyze the data, you also need to get some software or scripts. For this project you need a job script that can performa a word count on the acquired data. To get the jobt script run the following command: 
 
 ```sh
-wget https://raw.githubusercontent.com/maithili-k/uva-rdm-jan-2023/tree/main/data-creation-and-analysis/lisa-job.sh
+wget https://raw.githubusercontent.com/maithili-k/uva-rdm-jan-2023/main/2-data-creation-and-analysis/jobscript.sh
 ```
+
+The jobscript start a short job that runs a wordcount on all files in the defined input directory (default is `/home/lcurXXXX/input/`) and writes the result in the output directory (default is `/home/lcurXXXX/result/`) in a results file that contains the ID of the SLURM job.
+
+To submit the job run the following command:
+
+```
+sbatch jobscript.sh
+```
+
+Once the job is finished you can inspect the result:
+
+```
+cat result/result-XXXXXXXXX.txt
+````
+
+> **_Food for thought:_**
+> * When looking at the results, what do you notice? How would you change the jobscript to get ridt of the noise? Would you use bash or change to a completely different implementation?
+> * Downloading and uploading results is a manual process in our current workflow. Is it possible to do this as part of the job? Why would or wouldn't you do this?
+
+## 5. Share the results
+Research is mostly a collaborative effort. This means that once you ran your analysis you want to share the results with other collaborators. Start with uploding your result to your projectfolder on Research Drive:
+
+```
+rclone copy result/result-XXXXXXXXX.txt "RD:Demo XX (Projectfolder)"
+```
+
+Share the result file, or maybe even the source, with a group that has a different part of Alice in Wonderland. You can use the [Research Drive documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+share+a+folder+or+file) to find information on how to do that.
+
+> **_Food for thought:_**
+* If people want to reproduce the results you shared what information do they need? How do you make sure that they _can_ reproduce your work?
+
+## 6. Get the final dataset
+To continue to the next part of the assignment you need to have a dataset. Ideally you have collected the information from three acts and have combined the frequency tables, or ran a full analysis on the source of all acts. If you didn't manage to do that, no worries, you can continue with your own results file or even a dummy text file.
 
 
