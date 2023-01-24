@@ -17,4 +17,4 @@ Learning about basic data management principles. Using the Research Drive and Yo
 |  09:00 - 09:45 | 1. Presentation - (Research) Data Management Principles |                                      
 |  10:00 - 11:00 | 2. [Hands-on](https://github.com/maithili-k/uva-rdm-jan-2023/blob/main/2-data-creation-and-analysis/lisa-researchdrive-exercise.md) - data creation and analysis (Lisa and Research Drive)|
 |  11:00 - 11:15 | Break |
-|  11:15 - 13:00 | 3. Hands-on - data management in Yoda |
+|  11:15 - 13:00 | 3. [Hands-on](https://github.com/maithili-k/uva-rdm-jan-2023/blob/main/3-data-storage-publication/yoda-exercise.md) - data management in Yoda |
