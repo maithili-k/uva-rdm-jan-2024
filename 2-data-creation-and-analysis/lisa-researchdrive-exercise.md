@@ -59,13 +59,12 @@ lcurXXXX@loginX:~$ rclone ls "RD:"
   3308028 Training (Projectfolder)/Hands-on.pdf
   9896935 Training (Projectfolder)/Research Drive Onboarding Training -Basic.pdf
  12730442 Training (Projectfolder)/ResearchDriveTraining-Onboarding.pdf
-    32772 Alice in Wonderland Act I/alice-in-wonderland-act-i.txt
+    32772 Training (Projectfolder)/alice-in-wonderland.txt
 ```
-
-Each group will see one of the three acts. This needs to be copied to your home folder:
+This needs to be copied to your home folder:
 
 ```sh
-rclone copy "RD:UvA HPC Course (Projectfolder)/Alice in Wonderland Act I" input
+rclone copy "RD:UvA HPC Course (Projectfolder)/alice-in-wonderland.txt" input
 ```
 
 There are a couple of things to note here. First, the source path is placed within `""`. This is to make sure that the shell does not interpret all spaces and other possible characters. Second, the desitnation file has a different name, this is important for the scripts you are using in the later steps.
@@ -97,11 +96,11 @@ cat result/result-XXXXXXXXX.txt
 ````
 
 > **_Food for thought:_**
-> * When looking at the results, what do you notice? How would you change the jobscript to get ridt of the noise? Would you use bash or change to a completely different implementation?
+> * When looking at the results, what do you notice? How would you change the jobscript to get rid of the noise? Would you use bash or change to a completely different implementation?
 > * Downloading and uploading results is a manual process in our current workflow. Is it possible to do this as part of the job? Why would or wouldn't you do this?
 
 ## 5. Share the results
-Research is mostly a collaborative effort. This means that once you ran your analysis you want to share the results with other collaborators. Start with uploding your result to your projectfolder on Research Drive:
+Fix this part here - Research is mostly a collaborative effort. This means that once you ran your analysis you want to share the results with other collaborators. Start with uploding your result to your projectfolder on Research Drive:
 
 ```
 rclone copy result/result-XXXXXXXXX.txt "RD:Demo XX (Projectfolder)"
@@ -111,8 +110,5 @@ Share the result file, or maybe even the source, with a group that has a differe
 
 > **_Food for thought:_**
 > * If people want to reproduce the results you shared what information do they need? How do you make sure that they _can_ reproduce your work?
-
-## 6. Get the final dataset
-To continue to the next part of the assignment you need to have a dataset. Ideally you have collected the information from three acts and have combined the frequency tables, or ran a full analysis on the source of all acts. If you didn't manage to do that, no worries, you can continue with your own results file or even a dummy text file.
 
 
