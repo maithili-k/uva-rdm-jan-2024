@@ -89,7 +89,7 @@ You can find the necessary details to perform the archivng steps [here](https://
 
 ## 6. Publish your uploaded results in Yoda
 
-Now that you have an immutable dataset archived in the Vault of Yoda, you may proceed to with instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+publish+data+packages)
+Now that you have an immutable dataset archived in the Vault of Yoda, you may read to with instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+publish+data+packages) but please go through the food for thought below and remember - as this is test data set you will not be actually publishing the data but doing a dry run.
 
 > **_Food for thought:_**
 >
