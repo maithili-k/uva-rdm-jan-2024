@@ -82,8 +82,8 @@ Please go through the food for thought section below before archiving the data.
 > * What is the difference between data storage and data archiving? When do you do one or the other?
 > * What is the role of metadata here? 
 > * Think of all the steps you performed so far, and now think how you would describe this as metadata that can be understood by anyone
-> * What would you like to know about the data/software if you were to reuse someone else's data? This is metadata
-> * Can you think of a standardized template that you can be used for metadata in your field of work? Yoda can support various metadata template
+> * What would you like to know about the data/software if you were to reuse someone else's data? This is important metadata
+> * Can you think of a standardized template that you can be used for metadata in your field of work? Yoda can support various metadata templates
 
 You can find the necessary details to perform the archivng steps [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+archive+data+packages).
 
