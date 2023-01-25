@@ -34,7 +34,7 @@ There are several ways to connect to Yoda (e.g., via a [network disk](https://se
 You shall have received the username and password with which you can login to the [SURF's Yoda service](https://scuba-yoda.irods.surfsara.nl/). 
 
 ## 3. Familiarize yourself with the Portal
-You can access the [Yoda portal](https://scuba-yoda.irods.surfsara.nl/) via any browser. With the username/password credentials provided in the above step, please login and familiarize yourself with the Yoda environment. The details of the portal can be found in SURF's Yoda documentation [here](https://servicedesk.surf.nl/wiki/display/WIKI/Getting+started+with+the+Yoda+portal) (section Research module and Vault). 
+You can access the [Yoda portal](https://scuba-yoda.irods.surfsara.nl/) via any browser. With the username/password credentials provided in the above step, please login and familiarize yourself with the Yoda environment. The details of the portal can be found in SURF's Yoda documentation [here](https://servicedesk.surf.nl/wiki/display/WIKI/Getting+started+with+the+Yoda+portal) (section Research module and Vault). You do not have any data in Yoda yet, so just read up and we will perform some of the steps in this module. 
 
 > **_Food for thought:_**
 >
@@ -42,9 +42,9 @@ You can access the [Yoda portal](https://scuba-yoda.irods.surfsara.nl/) via any 
 > * Do you already use something similar in your daily work? If not, could Yoda be benificial to you?
 
 ## 4. Upload your results to Yoda
-Now that you know a little more about Yoda and are a little bit familiar with the environment, let us push some data into Yoda from Lisa. 
+Now that you know a little more about Yoda and are a little bit familiar with the environment, let us first push some data into Yoda from Lisa. 
 
-The Yoda username/password you received allows you to interact with Yoda via a browser. From the Lisa login node we shall use a command line client to upload data. You already used rclone to interact with Research Drive and will use the same client to upload your results to Yoda, but with Yoda's data access password. You can find the insrtructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+get+a+Data+Access+Password) to generate a temporary password. 
+The Yoda username/password you received allows you to interact with Yoda via a browser. From the Lisa login node we shall use a command line client to upload data. You already used rclone to interact with Research Drive and will use the same client to upload your results to Yoda, but with Yoda's data access password. You can find the instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+get+a+Data+Access+Password) to generate a temporary password. 
 
 The password cannot be readily used as rclone client requires an "obscurated" password:
 
