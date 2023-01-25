@@ -45,26 +45,37 @@ In this course we will use the Lisa (a batch processing cluster at SURF) login n
 Login to the Lisa compute cluster with your appropriate credentials:
 
 ```sh
-ssh lcur#@lisa.surfsara.nl
+ssh lcurXXXX@lisa.surfsara.nl
 ```
 
 ## 3. Mount Research Drive on Lisa/Download data from research Drive to Lisa
 
 We start with the first step of the Research Data Life Cycle: acquire data that needs to be processed. For this assignment you have to download the data from Researchdrive. The most efficient way to move data from Researchdrive to Lisa is through rclone. To configure rclone for Researchdrive we ask you to [this guide](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone) in our documentation.
 
+The final config should look something like this:
+
+```
+lcur2612@login3:~$ cat .config/rclone/rclone.conf
+[RD]
+type = webdav
+url = https://demo.data.surfsara.nl/remote.php/webdav/
+vendor = owncloud
+user = demoXX
+pass = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
 Once you have configured rclone you can inspect the remote location:
 
 ```
-lcurXXXX@loginX:~$ rclone ls "RD:"
+lcurXXXX@login3:~$ rclone ls "RD:"
   3308028 Training (Projectfolder)/Hands-on.pdf
-  9896935 Training (Projectfolder)/Research Drive Onboarding Training -Basic.pdf
- 12730442 Training (Projectfolder)/ResearchDriveTraining-Onboarding.pdf
-    32772 Training (Projectfolder)/alice-in-wonderland.txt
+ 12621077 Training (Projectfolder)/ResearchDriveTraining-Onboarding.pdf
+   183769 Training (Projectfolder)/UvA HPC Course Material/alice-in-wonderland.txt
 ```
 This needs to be copied to your home folder:
 
 ```sh
-rclone copy "RD:UvA HPC Course (Projectfolder)/alice-in-wonderland.txt" input
+rclone copy "RD:Training (Projectfolder)/UvA HPC Course Material" input
 ```
 
 There are a couple of things to note here. First, the source path is placed within `""`. This is to make sure that the shell does not interpret all spaces and other possible characters. Second, the desitnation file has a different name, this is important for the scripts you are using in the later steps.
