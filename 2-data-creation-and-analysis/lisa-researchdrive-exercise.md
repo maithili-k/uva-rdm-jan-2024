@@ -15,7 +15,7 @@ This project is licensed under the GPLv3 license.
 The full license text can be found in [LICENSE](LICENSE).
 
 ## Premise
-You heard the talk about data management principles and problems associated with managing data. Let us see what it means in practive to 'manage data'. During your degree course you handle study material (think notes,papers, book pdfs, etc.), scripts of a fellow student/online material. You also make your study notes, projects and associated material, write your own scripts. Think of all this material as data (including your software) and the data life cycle that was mentioned.  
+You heard the talk about data management principles and problems associated with managing data. Let us see what it means in practice to 'manage data'. During your degree course you handle study material (think notes, papers, book pdfs, etc.), scripts of a fellow student/online material. You also make your study notes, projects and associated material, write your own scripts. Think of all this material as data (including your software) and the data life cycle that was mentioned.  
 
 1. You create/collect 'data' for your study from 'somewhere' 
 2. You need to save/upload this data 'somewhere' safely
