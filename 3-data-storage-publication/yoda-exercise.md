@@ -85,7 +85,7 @@ Please go through the food for thought section below before archiving the data.
 > * What would you like to know about the data/software if you were to reuse someone else's data? This is important metadata
 > * Can you think of a standardized template that you can be used for metadata in your field of work? Yoda can support various metadata templates
 
-You can find the necessary details to perform the archivng steps [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+archive+data+packages).
+You can find the necessary details to perform the archivng steps [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+archive+data+packages). You do not have the data manager role, so someone else will have to evaluate your request
 
 ## 6. Publish your uploaded results in Yoda
 
