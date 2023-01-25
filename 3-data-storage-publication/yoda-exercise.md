@@ -27,14 +27,14 @@ We will continue following the steps you read in the [premise](https://github.co
 
 ## 2. Login to the Yoda portal
 
-Yoda is a research data management service that enables researchers to securely deposit, share, publish and preserve large amounts of research data during all stages of a research project. In this tutorial you pulled the data from Research Drive, but could also be pulled from an existing dataset already available in Yoda (think resuability).
+Yoda is a research data management service that enables researchers to securely deposit, share, publish and preserve large amounts of research data during all stages of a research project. In this module, you will use Yoda for the steps 4 and 5 of the [premise](https://github.com/maithili-k/uva-rdm-jan-2023/blob/main/2-data-creation-and-analysis/lisa-researchdrive-exercise.md#premise). In this tutorial you downloaded the input data from Research Drive, but it could also have been pulled from an existing dataset already available in Yoda (think resuability).
 
 There are several ways to connect to Yoda (e.g., via a [network disk](https://servicedesk.surf.nl/wiki/display/WIKI/Connecting+to+Yoda+via+network+disk) or clients such as [icommands](https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=19824798), rclone or via a webportal). In this tutorial, you will upload data to Yoda with rclone and then use the web portal to publish the results.
 
 You shall have received the username and password with which you can login to the [SURF's Yoda service](https://scuba-yoda.irods.surfsara.nl/). 
 
 ## 3. Familiarize yourself with the Portal
-You can access the [Yoda portal](https://scuba-yoda.irods.surfsara.nl/) via any browser. With the username/password credentials provided in the above step, please login and familiarize yourself with the Yoda environment. These portal details can be found in our Yoda documentation [here](https://servicedesk.surf.nl/wiki/display/WIKI/Getting+started+with+the+Yoda+portal). 
+You can access the [Yoda portal](https://scuba-yoda.irods.surfsara.nl/) via any browser. With the username/password credentials provided in the above step, please login and familiarize yourself with the Yoda environment. The details of the portal can be found in SURF's Yoda documentation [here](https://servicedesk.surf.nl/wiki/display/WIKI/Getting+started+with+the+Yoda+portal). 
 
 > **_Food for thought:_**
 >
