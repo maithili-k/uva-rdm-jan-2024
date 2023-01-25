@@ -59,7 +59,7 @@ rclone ls :webdav: --no-check-certificate --webdav-url=https://scuba-data.irods.
 If you do not get an error but also see no output, don't worry. As you do not have any data there is no output. Now with the following command, upload your result(s) to Yoda. 
 
 ```
-rclone move result-XXXXXXXXX.txt :webdav:research-uva-2023/yourfolder --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=your-yoda-account@something.nl --webdav-pass=myobscurepassword
+rclone move result-XXXXXXXXX.txt :webdav:research-uva-2023/yodauserX_collection --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=your-yoda-account@something.nl --webdav-pass=myobscurepassword
 ```
 Check with rclone ls command if the upload succeeded. Now go to the Yoda portal and see if you can fild your uploaded result.
 
