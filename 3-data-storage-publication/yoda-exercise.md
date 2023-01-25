@@ -11,7 +11,7 @@ This project is licensed under the GPLv3 license.
 The full license text can be found in [LICENSE](LICENSE).
 
 ## What is expected of you in this module
-We will continue following the steps you read in the [premise](https://github.com/maithili-k/uva-rdm-jan-2023/blob/main/2-data-creation-and-analysis/lisa-researchdrive-exercise.md). We will focus on steps 4 and 5 of the premise in this module. You shall be using the workflow defined in this module and can find the generic how-to's on SURF's Yoda documentation pages. The relevant pointers in the documentation are provided for each steps below.
+We will continue following the steps you read in the [premise](https://github.com/maithili-k/uva-rdm-jan-2023/blob/main/2-data-creation-and-analysis/lisa-researchdrive-exercise.md#premise). We will focus on steps 4 and 5 of the premise in this module. You shall be using the workflow defined in this module and can find the generic how-to's on SURF's Yoda documentation pages. The relevant pointers in the documentation are provided for each steps below.
 
 > **_Food for thought:_**
 >
