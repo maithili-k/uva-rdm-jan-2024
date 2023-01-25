@@ -55,7 +55,6 @@ We start with the first step of the Research Data Life Cycle: acquire data that 
 The final config should look something like this:
 
 ```
-lcur2612@login3:~$ cat .config/rclone/rclone.conf
 [RD]
 type = webdav
 url = https://demo.data.surfsara.nl/remote.php/webdav/
