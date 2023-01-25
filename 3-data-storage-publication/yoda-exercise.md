@@ -56,8 +56,7 @@ The output generated is your obscured password. Let us test if you can access Yo
 ```
 rclone ls :webdav: --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=your-yoda-account@something.nl --webdav-pass=myobscurepassword
 ```
-
-Now with the following command, upload your result(s) to Yoda. 
+If you do not get an error but also see no output, don't worry. As you do not have any data there is no output. Now with the following command, upload your result(s) to Yoda. 
 
 ```
 rclone move result.txt :webdav:research-uva-2023/yourfolder --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=your-yoda-account@something.nl --webdav-pass=myobscurepassword
