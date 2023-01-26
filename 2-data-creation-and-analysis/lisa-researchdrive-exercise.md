@@ -50,7 +50,7 @@ ssh lcurXXXX@lisa.surfsara.nl
 
 ## 3. Mount Research Drive on Lisa/Download data from research Drive to Lisa
 
-We start with the first step of the Research Data Life Cycle: acquire data that needs to be processed. For this assignment you have to download the data from Researchdrive. The most efficient way to move data from Researchdrive to Lisa is through rclone. To configure rclone for Researchdrive we ask you to [this guide](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone) in our documentation. You shall receive credentials for your Research Drive account during the handson session. The portal can be found [here](https://demo.data.surfsara.nl)
+We start with the first step of the Research Data Life Cycle: acquire data that needs to be processed. For this assignment you have to download the data from Researchdrive. The most efficient way to move data from Researchdrive to Lisa is through rclone. To configure rclone for Researchdrive we ask you to [this guide](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone) in our documentation. You shall receive credentials for your Research Drive account during the handson session. The portal can be found [here](https://demo.data.surfsara.nl) where you shall create the password for the further steps.
 
 The final config should look something like this:
 
