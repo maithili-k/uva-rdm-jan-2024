@@ -80,9 +80,11 @@ rclone copy "RD:Training (Projectfolder)/UvA HPC Course Material" input
 There are a couple of things to note here. First, the source path is placed within `""`. This is to make sure that the shell does not interpret all spaces and other possible characters. Second, the desitnation file has a different name, this is important for the scripts you are using in the later steps.
 
 > **_Food for thought:_**
+> * Are you sure you have the permission to 'just use' this dataset (just because you can download something does not mean you can just use it) or did you do something illegal? What kind of licence allows free reuse of data?
+> * What if you did not have the permission to access the data? How would you go about it?
 > * We are using Research Drive via rclone, in our [documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+upload+or+download+your+files) you can find multiple methods to move data around. What are the advantages and disadvantages of each method and when would you recommend one over the other?
 > * Snellius has multiple filesystesms, in our (fix this link)[documentation](https://servicedesk.surf.nl/wiki/display/WIKI/Lisa+hardware+and+file+systems) you can find more information. What would be the right place for storing the data from this assignment? What type of data would you store on each filesystem?
-> * Research Drive and local file systems have different use cases. When would you use on over the other?
+> * Research Drive and Snellius' local file systems have different use cases. When would you use on over the other?
 
 ## 4. Run analysis on Snellius
 Once you have acquired the data (steps 1 and 2 of the premise, first step of the Research Data Life Cycle), it is time for the next step: analyzing the data. To analyze the data, you also need to get some software or scripts. For this project you need a job script that can performa a word count on the acquired data. To get the jobt script run the following command: 
