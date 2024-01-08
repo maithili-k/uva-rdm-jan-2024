@@ -7,7 +7,7 @@ Learning about basic data management principles. Using the Research Drive and Yo
 ## Content
 
 - Presentation: (Research) Data Management Principles 
-- Hands-on: Creating/reusing data on a batch processing cluster (Lisa) pulling data from Research Drive, running analysis on this dataset and publish the data on Yoda
+- Hands-on: Creating/reusing data on a batch processing cluster (Lisa), pulling data from Research Drive, running analysis on this dataset and publishing the data on Yoda
 
 
 ## Agenda
