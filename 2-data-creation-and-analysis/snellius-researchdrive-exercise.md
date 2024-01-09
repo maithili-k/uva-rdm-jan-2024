@@ -8,6 +8,7 @@
 - Maithili Kalamkar Stam (SURF)
 - Jorik van Kemenade (SURF)
 - Claudio Cacciari (SURF)
+- Steven Voges (SURF)
 
 **License**
 Copyright (c) 2023, SURFsara. All rights reserved.
@@ -66,15 +67,15 @@ pass = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Once you have configured rclone you can inspect the remote location:
 
 ```
-lcurXXXX@login3:~$ rclone ls "RD:"
-  3308028 Training (Projectfolder)/Hands-on.pdf
- 12621077 Training (Projectfolder)/ResearchDriveTraining-Onboarding.pdf
-   183769 Training (Projectfolder)/UvA HPC Course Material/alice-in-wonderland.txt
+lcurXXXX@login3:~$ rclone ls RD:
+ 3308028  Training (Projectfolder)/Hands-on.pdf
+ 15747551 Training (Projectfolder)/ResearchDriveTraining-Onboarding.pdf
+   104077 UvA-HPC (Projectfolder)/UvA HPC Course Material/alice-in-wonderland.txt
 ```
 This needs to be copied to your home folder:
 
 ```sh
-rclone copy "RD:Training (Projectfolder)/UvA HPC Course Material" input
+rclone copy "RD:UvA-HPC (Projectfolder)/UvA HPC Course Material" input
 ```
 
 There are a couple of things to note here. First, the source path is placed within `""`. This is to make sure that the shell does not interpret all spaces and other possible characters. Second, the desitnation file has a different name, this is important for the scripts you are using in the later steps.
@@ -113,6 +114,8 @@ cat result/result-XXXXXXXXX.txt
 
 ## 5. Share the results
 Research is mostly a collaborative effort. This means that once you ran your analysis you want to share the results with other collaborators. Start with uploding your result to your _own_ projectfolder on Research Drive:
+
+Tip! Double check your project folder's name using the rclone lsd command
 
 ```
 rclone copy result/result-XXXXXXXXX.txt "RD:Demo XX (Projectfolder)"
