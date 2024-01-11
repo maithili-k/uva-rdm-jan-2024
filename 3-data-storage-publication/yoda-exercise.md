@@ -42,9 +42,9 @@ You can access the (check this link) [Yoda portal](https://scuba-yoda.irods.surf
 > * Do you already use something similar in your daily work? If not, could Yoda be benificial to you?
 
 ## 4. Upload your results to Yoda
-Now that you know a little more about Yoda and are a little bit familiar with the environment, let us first push some data into Yoda from Lisa. 
+Now that you know a little more about Yoda and are a little bit familiar with the environment, let us first push some data into Yoda from Snellius. 
 
-The Yoda username/password you received allows you to interact with Yoda via a browser. From the Lisa login node we shall use a command line client to upload data. You already used rclone to interact with Research Drive and will use the same client to upload your results to Yoda, but with Yoda's data access password. You can find the instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+get+a+Data+Access+Password) to generate a temporary password. 
+The Yoda username/password you received allows you to interact with Yoda via a browser. From the Snellius login node we shall use a command line client to upload data. You already used rclone to interact with Research Drive and will use the same client to upload your results to Yoda, but with Yoda's data access password. You can find the instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+get+a+Data+Access+Password) to generate a temporary password. 
 
 The password cannot be readily used as rclone client requires an "obscurated" password:
 
@@ -58,7 +58,7 @@ rclone ls :webdav: --no-check-certificate --webdav-url=https://scuba-data.irods.
 ```
 If you do not get an error but also see no output, don't worry. As you do not have any data there is no output. Now with the following command, upload your result(s) to Yoda. 
 
-First let us create a folder for yourself so you do not mix up your results with others. Pay attemtion to the folder name that you should create. e.g., if you are yodauser5@sharklasers.com then create a folder called yodauser5_collection
+First let us create a folder for yourself so you do not mix up your results with others. Pay attention to the folder name that you should create. e.g., if you are yodauser5@sharklasers.com then create a folder called yodauser5_collection
 
 ```
 rclone mkdir :webdav:research-uva-2023/yodauserX_collection --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=yodauserX@sharklasers.com --webdav-pass=myobscurepassword
