@@ -1,12 +1,9 @@
 #!/bin/bash
 
 # Set job requirements
-# We are going to use only one node (-N 1), and use the express
-# queue (-p short). And we set the time to 4 minutes (-t 4:00)
 
-#SBATCH -p short
-#SBATCH -N 1
-#SBATCH -t 4:00
+# SBATCH -p short
+# SBATCH -t 4:00
 
 # Change these variables if you want to change the input or output directories
 inputdir="$HOME/input"
