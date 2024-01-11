@@ -31,7 +31,7 @@ Yoda is a research data management service that enables researchers to securely
 
 There are several ways to connect to Yoda (e.g., via a [network disk](https://servicedesk.surf.nl/wiki/display/WIKI/Connecting+to+Yoda+via+network+drive) or clients such as [icommands](https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=19824798), rclone or via a webportal). In this tutorial, you will upload data to Yoda with rclone and then use the web portal to publish the results.
 
-You shall have received the username and password with which you can login to the (check this link) [SURF's Yoda service](https://scuba-yoda.irods.surfsara.nl/). 
+You shall have received the username and password with which you can login to the [SURF's Yoda service](https://scuba-yoda.irods.surfsara.nl/). 
 
 ## 3. Familiarize yourself with the Portal
 You can access the (check this link) [Yoda portal](https://scuba-yoda.irods.surfsara.nl/) via any browser. With the username/password credentials provided in the above step, please login and familiarize yourself with the Yoda environment. The details of the portal can be found in SURF's Yoda documentation [here](https://servicedesk.surf.nl/wiki/display/WIKI/Getting+started+with+the+Yoda+portal) (section Research module and Vault). You do not have any data in Yoda yet, so just read up and we will perform some of the steps in this module. 
