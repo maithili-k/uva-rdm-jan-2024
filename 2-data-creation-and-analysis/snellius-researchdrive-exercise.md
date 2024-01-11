@@ -124,7 +124,7 @@ rclone copy result/result-XXXXXXXXX.txt "RD:Demo XX (Projectfolder)"
 Share the result file, or maybe even the source, with the demo account sitting next to you. You can use the [Research Drive documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+share+a+folder+or+file) to find information on how to do that.
 
 > **_Food for thought:_**
-> * If people want to reproduce the results you shared what information do they need? How do you make sure that they _can_ reproduce your work?
+> * If people want to reproduce the results you just shared in the above step, what information do they need? How do you make sure that they _can_ reproduce your work?
 
 ## Reflection
 You downloaded an existing dataset, ran some analysis on it and shared the result in a collaboration. Would you be able to do it one year from now? Or a fellow student colleague of yours, and what would your instructions to him/her look like? Think of where the data would be, how would you find it, get access to it, software version, where would you run the analysis, etc. This is a very common problem. We will try to address this in the next module and introduce to you the best practices and steps you can already take to ensure you are ready to tackle "data management".
