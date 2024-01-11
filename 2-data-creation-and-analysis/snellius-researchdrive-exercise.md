@@ -67,12 +67,12 @@ pass = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Once you have configured rclone you can inspect the remote location:
 
 ```
-lcurXXXX@login3:~$ rclone ls RD:
+(fix this line) lcurXXXX@login3:~$ rclone ls RD:
  3308028  Training (Projectfolder)/Hands-on.pdf
  15747551 Training (Projectfolder)/ResearchDriveTraining-Onboarding.pdf
    104077 UvA-HPC (Projectfolder)/UvA HPC Course Material/alice-in-wonderland.txt
 ```
-This needs to be copied to your home folder:
+This needs to be copied to your home folder on Snellius:
 
 ```sh
 rclone copy "RD:UvA-HPC (Projectfolder)/UvA HPC Course Material" input
@@ -84,7 +84,7 @@ There are a couple of things to note here. First, the source path is placed with
 > * Are you sure you have the permission to 'just use' this dataset (just because you can download something does not mean you can just use it) or did you do something illegal? What kind of licence allows free reuse of data?
 > * What if you did not have the permission to access the data? How would you go about it?
 > * We are using Research Drive via rclone, in our [documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+upload+or+download+your+files) you can find multiple methods to move data around. What are the advantages and disadvantages of each method and when would you recommend one over the other?
-> * Snellius has multiple filesystesms, in our (fix this link)[documentation](https://servicedesk.surf.nl/wiki/display/WIKI/Lisa+hardware+and+file+systems) you can find more information. What would be the right place for storing the data from this assignment? What type of data would you store on each filesystem?
+> * Snellius has multiple filesystesms, in our [documentation](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius+filesystems) you can find more information. What would be the right place for storing the data from this assignment? What type of data would you store on each filesystem?
 > * Research Drive and Snellius' local file systems have different use cases. When would you use on over the other?
 
 ## 4. Run analysis on Snellius
