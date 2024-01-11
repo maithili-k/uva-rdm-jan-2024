@@ -32,7 +32,7 @@ You heard the talk about data management principles and problems associated with
 
 
 ### What we expect you to do
-In this assignment we will focus on data management in the active phase of research. Imagine you are part of a group of researchers that is analysing the literary works of Lewis Carol. Your task is to analyse Alice in Wonderland. You get access to the full text via Research Drive, use Snellius to analyse the text, and share the results with your collaborators. You can comfortably go through this exercise on your own pace. We will take stops in intervals to see if we are all more or less on the same page and discuss together the 'Food for thought' questions. You can of course always ask questions or help if you cannot proceed.
+In this assignment we will focus on data management in the active phase of research. Imagine you are part of a group of researchers that is analysing the literary works of Lewis Carol. Your task is to analyse Alice in Wonderland. You get access to the full text via storage service Research Drive, use the Dutch Supercomputer Snellius to analyse the text, and share the results with your collaborators via Yoda Data Management Service. You can comfortably go through this exercise on your own pace. We will take stops in intervals to see if we are all more or less on the same page and discuss together the 'Food for thought' questions. You can of course always ask questions or help if you cannot proceed.
 
 ## 1. Prerequisites
 
