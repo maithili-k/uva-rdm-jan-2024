@@ -29,7 +29,7 @@ We will continue following the steps you read in the [premise](https://github.co
 
 Yoda is a research data management service that enables researchers to securely deposit, share, publish and preserve large amounts of research data during all stages of a research project. In this module, you will use Yoda for the steps 4 and 5 of the [premise](https://github.com/maithili-k/uva-rdm-jan-2024/blob/main/2-data-creation-and-analysis/snellius-researchdrive-exercise.md#premise). In this tutorial you downloaded the input data from Research Drive, but it could also have been pulled from an existing dataset already available in Yoda (think resuability).
 
-There are several ways to connect to Yoda (e.g., via a [network disk](https://servicedesk.surf.nl/wiki/display/WIKI/Connecting+to+Yoda+via+network+disk) or clients such as [icommands](https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=19824798), rclone or via a webportal). In this tutorial, you will upload data to Yoda with rclone and then use the web portal to publish the results.
+There are several ways to connect to Yoda (e.g., via a [network disk](https://servicedesk.surf.nl/wiki/display/WIKI/Connecting+to+Yoda+via+network+drive) or clients such as [icommands](https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=19824798), rclone or via a webportal). In this tutorial, you will upload data to Yoda with rclone and then use the web portal to publish the results.
 
 You shall have received the username and password with which you can login to the (check this link) [SURF's Yoda service](https://scuba-yoda.irods.surfsara.nl/). 
 
