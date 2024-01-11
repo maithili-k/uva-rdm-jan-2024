@@ -91,7 +91,7 @@ There are a couple of things to note here. First, the source path is placed with
 Once you have acquired the data (steps 1 and 2 of the premise, first step of the Research Data Life Cycle), it is time for the next step: analyzing the data. To analyze the data, you also need to get some software or scripts. For this project you need a job script that can performa a word count on the acquired data. To get the jobt script run the following command: 
 
 ```sh
-wget https://raw.githubusercontent.com/maithili-k/uva-rdm-jan-2023/main/2-data-creation-and-analysis/jobscript.sh
+wget https://raw.githubusercontent.com/maithili-k/uva-rdm-jan-2024/main/2-data-creation-and-analysis/jobscript.sh
 ```
 
 The jobscript start a short job that runs a wordcount on all files in the defined input directory (default is `/home/lcurXXXX/input/`) and writes the result in the output directory (default is `/home/lcurXXXX/result/`) in a results file that contains the ID of the SLURM job.
