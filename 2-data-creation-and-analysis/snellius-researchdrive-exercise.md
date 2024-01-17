@@ -46,7 +46,7 @@ In this course we will use the Snellius (Dutch National Supercomputer hosted by 
 Login to the Snellius compute cluster with your appropriate credentials:
 
 ```sh
-(fix this) ssh lcurXXXX@lisa.surfsara.nl
+(fix this) ssh scurXXXX@snellius.surf.nl
 ```
 
 ## 3. Mount Research Drive on Snellius/Download data from Research Drive to Snellius
