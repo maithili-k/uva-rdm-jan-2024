@@ -4,6 +4,7 @@
 
 # SBATCH -p short
 # SBATCH -t 4:00
+# SBATCH --partition=thin_course
 
 # Change these variables if you want to change the input or output directories
 inputdir="$HOME/input"
