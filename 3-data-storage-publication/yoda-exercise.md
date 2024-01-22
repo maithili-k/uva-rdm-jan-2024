@@ -12,7 +12,7 @@ This project is licensed under the GPLv3 license.
 The full license text can be found in [LICENSE](LICENSE).
 
 ## What is expected of you in this module
-We will continue following the steps you read in the [premise](https://github.com/maithili-k/uva-rdm-jan-2024/blob/main/2-data-creation-and-analysis/snellius-researchdrive-exercise.md#premise). We will focus on steps 4 and 5 in this module. You will be using the workflow defined in this module using the how-tos on SURF's Yoda documentation, links to which are provided at each step.
+We will continue following the steps you read in the [premise](https://github.com/maithili-k/uva-rdm-jan-2024/blob/main/2-data-creation-and-analysis/researchcloud-researchdrive-exercise.md#premise). We will focus on steps 4 and 5 in this module. You will be using the workflow defined in this module using the how-tos on SURF's Yoda documentation, links to which are provided at each step.
 
 > **_Food for thought:_**
 >
