@@ -49,6 +49,7 @@ Login to the SURF Research Cloud Workspace:
 For this part of the assignment you need to login to an Ubuntu-based workspace on SURF Research Cloud. You performed all the steps to reach this point in your SURF Research CLoud training earlier this week. If you already have a workspace running and can ssh/login to that workspace, you may skip the following 2 steps. 
 
 1] Followed the instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/Hands-On+for+Introduction+to+SURF+Research+Cloud) to create your own Ubuntu-based workspace, if you do not already have one. 
+
 2] Then proceed to [login/ssh](https://servicedesk.surf.nl/wiki/display/WIKI/Log+in+to+your+workspace) into the workspace
 
 Install Rclone client:
