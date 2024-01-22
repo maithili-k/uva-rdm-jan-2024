@@ -42,7 +42,7 @@ In this assignment we will focus on data management during the active phase of r
 
 ## 2. Login to SURF Research Cloud
 
-In this assignment we will use the SURF Research Cloud as our user interface where we will install a client called rclone, mount Research Drive and download data, run analysis and upload output into Yoda.
+In this assignment we will use the SURF Research Cloud as our user interface where we will mount Research Drive and download data, run analysis in the workspace and upload output into Yoda.
 
 Login to the SURF Research Cloud Virtual Machine:
 
