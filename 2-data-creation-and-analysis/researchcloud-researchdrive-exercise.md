@@ -76,7 +76,7 @@ pass = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Once you have configured rclone you can inspect the remote location:
 
 ```
-(fix this line) lcurXXXX@login3:~$ rclone ls RD:
+you@ubuntu-workspace:~$ rclone ls RD:
  3308028  Training (Projectfolder)/Hands-on.pdf
  15747551 Training (Projectfolder)/ResearchDriveTraining-Onboarding.pdf
    104077 UvA-HPC (Projectfolder)/UvA HPC Course Material/alice-in-wonderland.txt
