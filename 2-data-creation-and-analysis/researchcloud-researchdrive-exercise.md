@@ -106,6 +106,7 @@ The jobscript runs a wordcount on all files in the defined input directory (defa
 To submit the job run the following command:
 
 ```
+chmod +x $HOME/jobscript-src.sh
 $HOME/jobscript-src.sh
 ```
 
