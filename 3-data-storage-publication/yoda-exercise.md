@@ -43,14 +43,14 @@ You can access the [Yoda portal](https://scuba-yoda.irods.surfsara.nl/) via any 
 > * Do you already use something similar in your daily work? If not, could Yoda be benificial to you?
 
 ## 4. Upload your results to Yoda
-Now that you know a little more about Yoda and are a little bit familiar with the environment, let us first push some data into Yoda from Snellius. 
+Now that you know a little more about Yoda and are a little bit familiar with the environment, let us first push some data into Yoda from SURF Research Cloud. 
 
-The Yoda username/password you received allows you to interact with Yoda via a browser. From the Snellius login node we will use a command line client to upload data. You already used rclone to interact with Research Drive and will use the same client to upload your results to Yoda, but with Yoda's data access password. You can find the instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+get+a+Data+Access+Password) to generate a temporary password. 
+The Yoda username/password you received allows you to interact with Yoda via a browser. You already used rclone to interact with Research Drive and will use the same client to upload your results to Yoda, but with Yoda's data access password. You can find the instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/How+to+get+a+Data+Access+Password) to generate a temporary password. 
 
 The password cannot be readily used as the rclone client requires an "obscured" password:
 
 ```
-rclone obscure passwordstring
+rclone obscure your-data-access-password
 ```
 The output generated is your obscured password. Let us test if you can access Yoda with rclone. In the command below, you are using rclone without creating a configuration as for Research Drive (but you can also create a configuration for Yoda)
 
@@ -62,12 +62,12 @@ If you do not get an error but also see no output, don't worry. As you do not ha
 First let us create a folder for yourself so you do not mix up your results with others. Pay attention to the folder name that you create. E.g., if you are yodauser5@sharklasers.com then create a folder called yodauser5_collection
 
 ```
-rclone mkdir :webdav:research-uva-2023/yodauserX_collection --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=yodauserX@sharklasers.com --webdav-pass=myobscurepassword
+rclone mkdir :webdav:research-uva2024/yodauserX_collection --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=yodauserX@sharklasers.com --webdav-pass=myobscurepassword
 ```
 Check with rclone or via the web portal to see if it succeeded. Now copy the result to your Yoda folder.
 
 ```
-rclone copy result-XXXXXXXXX.txt :webdav:research-uva-2023/yodauserX_collection --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=yodauserX@sharklasers.com  --webdav-pass=myobscurepassword
+rclone copy result/result-XXXXXXXXX.txt :webdav:research-uva2024/yodauserX_collection --no-check-certificate --webdav-url=https://scuba-data.irods.surfsara.nl --webdav-vendor=other --webdav-user=yodauserX@sharklasers.com  --webdav-pass=myobscurepassword
 ```
 Check with rclone ls command to see if the upload succeeded. Now go to the Yoda portal and see if you can find your uploaded result.
 
