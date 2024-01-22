@@ -117,8 +117,8 @@ cat result/result.txt
 ````
 
 > **_Food for thought:_**
-> * Look into this - When looking at the results, what do you notice? How would you change the jobscript to get rid of the noise? Would you use bash or change to a completely different implementation?
-> * Downloading and uploading results is a manual process in our current workflow. Is it possible to do this as part of a job on e.g., Dutch supercomputer Snellius? Why would or wouldn't you do this?
+> * When looking at the results, do they make sense to you? What would you also like to add?
+> * You are doing a lot of steps manually. What can you automate, or shouldn't?
 
 ## 5. Share the results
 Research is mostly a collaborative effort. This means that once you have run your analysis you need to share the results with other collaborators. Start by uploding your result to your _own_ projectfolder on Research Drive:
@@ -126,7 +126,7 @@ Research is mostly a collaborative effort. This means that once you have run you
 Tip! Double check your project folder's name using the rclone lsd command
 
 ```
-rclone copy result/result.txt "RD:Demo XX (Projectfolder)"
+rclone copy result/result-XXXXX.txt "RD:Demo XX (Projectfolder)"
 ```
 
 Share the result file, or maybe even the source, with the demo account sitting next to you. You can use the [Research Drive documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+share+a+folder+or+file) to find information on how to do that.
