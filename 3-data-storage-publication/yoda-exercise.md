@@ -28,7 +28,7 @@ We will continue following the steps you read in the [premise](https://github.co
 
 ## 2. Login to the Yoda portal
 
-Yoda is a research data management service that enables researchers to securely deposit, share, publish and preserve large amounts of research data during all stages of a research project. In this module, you will use Yoda for steps 4 and 5 of the [premise](https://github.com/maithili-k/uva-rdm-jan-2024/blob/main/2-data-creation-and-analysis/snellius-researchdrive-exercise.md#premise). In this tutorial you downloaded the input data from Research Drive, but it could also have been pulled from an existing dataset already available in Yoda (think of resuability).
+Yoda is a research data management service that enables researchers to securely deposit, share, publish and preserve large amounts of research data during all stages of a research project. In this module, you will use Yoda for steps 4 and 5 of the [premise](https://github.com/maithili-k/uva-rdm-jan-2024/blob/main/2-data-creation-and-analysis/researchcloud-researchdrive-exercise.md#premise). In this tutorial you downloaded the input data from Research Drive, but it could also have been pulled from an existing dataset already available in Yoda (think of resuability).
 
 There are several ways to connect to Yoda (e.g., via a [network disk](https://servicedesk.surf.nl/wiki/display/WIKI/Connecting+to+Yoda+via+network+drive), via clients such as [icommands](https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=19824798) or rclone, or via a web portal). In this tutorial, you will upload data to Yoda with rclone and then use the web portal to publish the results.
 
