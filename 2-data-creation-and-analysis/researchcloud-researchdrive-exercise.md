@@ -81,7 +81,7 @@ you@ubuntu-workspace:~$ rclone ls RD:
  15747551 Training (Projectfolder)/ResearchDriveTraining-Onboarding.pdf
    104077 UvA-HPC (Projectfolder)/UvA HPC Course Material/alice-in-wonderland.txt
 ```
-This needs to be copied to your home folder on Snellius:
+This needs to be copied to your home folder:
 
 ```sh
 rclone copy "RD:UvA-HPC (Projectfolder)/UvA HPC Course Material" input
