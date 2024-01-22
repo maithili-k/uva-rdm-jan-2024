@@ -33,26 +33,35 @@ You heard the talk about data management principles and problems associated with
 
 
 ### What we expect you to do
-In this assignment we will focus on data management during the active phase of research. Imagine you are part of a group of researchers that is analysing the literary works of Lewis Carol. Your task is to analyse Alice in Wonderland. You get access to the full text via the storage service Research Drive, use the Dutch Supercomputer Snellius to analyse the text, and share the results with your collaborators via the Yoda Data Management Service. You can comfortably go through this exercise at your own pace. We will pause at intervals to see if we are all more or less on the same page and discuss together the 'Food for thought' questions. You can of course always ask questions or for help if you cannot proceed.
+In this assignment we will focus on data management during the active phase of research. Imagine you are part of a group of researchers that is analysing the literary works of Lewis Carol. Your task is to analyse Alice in Wonderland. You get access to the full text via the storage service Research Drive, use the SURF Research Cloud to analyse the text, and share the results with your collaborators via the Yoda Data Management Service. You can comfortably go through this exercise at your own pace. We will pause at intervals to see if we are all more or less on the same page and discuss together the 'Food for thought' questions. You can of course always ask questions or for help if you cannot proceed.
 
 ## 1. Prerequisites
 
-- access to SURF Research Drive
+- access to SURF Research Cloud
 - Research Drive account username/password
 
 ## 2. Login to SURF Research Cloud
 
-In this course we will use the Snellius (Dutch National Supercomputer hosted by SURF) login node as our user interface where Research Drive can be mounted, and the node has the CLI tool iCommands installed to push data into Yoda.
+In this assignment we will use the SURF Research Cloud as our user interface where we will install a client called rclone, mount Research Drive and download data, run analysis and upload output into Yoda.
 
-Login to the Snellius compute cluster with your appropriate credentials:
+Login to the SURF Research Cloud Virtual Machine:
+
+For this part of the assignment you need to login to an Ubuntu-based workspace on SURF Research Cloud. You performed all the steps to reach this point in your training earlier this week. If you 
+already have a workspace running, please ssh/login to that workspace and skip the following 2 steps. 
+
+1] Followed the instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/Hands-On+for+Introduction+to+SURF+Research+Cloud) to create your own Ubuntu-based workspace, if you do not already have one. 
+2] Then proceed to [login/ssh](https://servicedesk.surf.nl/wiki/display/WIKI/Log+in+to+your+workspace) into the workspace
+
+Install Rclone client:
+Once you have logged in, run the following command to install the Rclone client:
 
 ```sh
-(fix this) ssh scurXXXX@snellius.surf.nl
+sudo apt install rclone -y
 ```
 
-## 3. Mount Research Drive on Snellius/Download data from Research Drive to Snellius
+## 3. Mount Research Drive on Research Cloud/Download data from Research Drive to Research Cloud
 
-We start with the first step of the Research Data Life Cycle: acquire data that needs to be processed. For this assignment you have to download the data from Research Drive. The most efficient way to move data from Research Drive to Snellius is through a client called rclone. Rclone is already installed on Snellius login node and you need to configure it for Research Drive. You will receive credentials for your Research Drive account during the hands-on session. Please refer to [this guide](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone) in our documentation to configure rclone. The portal can be found [here](https://demo.data.surfsara.nl) where you will create the password to proceed.
+We start with the first step of the Research Data Life Cycle: acquire data that needs to be processed. For this assignment you have to download the data from Research Drive. The most efficient way to move data from Research Drive to Research Cloud is through Rclone, which you installed in the previous step. You need to configure it for Research Drive. You will receive credentials for your Research Drive account during the hands-on session. Please refer to [this guide](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone) in our documentation to configure Rclone. The portal can be found [here](https://demo.data.surfsara.nl) where you will create the password to proceed.
 
 The final config should look something like this:
 
@@ -85,33 +94,31 @@ There are a couple of things to note here. First, the source path is placed with
 > * Are you sure you have the permission to 'just use' this dataset (just because you can download something does not mean you can just use it) or did you do something illegal? What kind of licence allows free reuse of data?
 > * What if you did not have the permission to access the data? How would you go about it?
 > * We are using Research Drive via rclone, in our [documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+upload+or+download+your+files) you can find multiple methods to move data around. What are the advantages and disadvantages of each method and when would you recommend one over the other?
-> * Snellius has multiple file systesms. In our [documentation](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius+filesystems) you can find more information. What would be the right place for storing the data from this assignment? What type of data would you store on each file system?
-> * Research Drive and Snellius' local file systems have different use cases. When would you use one over the other?
 
-## 4. Run analysis on Snellius
+## 4. Run analysis on Research Cloud
 Once you have acquired the data (steps 1 and 2 of the premise, first step of the Research Data Life Cycle), it is time for the next step: analysing the data. To analyse the data, you also need some software or a script. For this project you need a job script that can perform a word count on the acquired data. To get the job script, run the following command: 
 
 ```sh
-wget https://raw.githubusercontent.com/maithili-k/uva-rdm-jan-2024/main/2-data-creation-and-analysis/jobscript.sh
+wget https://raw.githubusercontent.com/maithili-k/uva-rdm-jan-2024/main/2-data-creation-and-analysis/jobscript-src.sh
 ```
 
-The jobscript starts a short job that runs a wordcount on all files in the defined input directory (default is `/home/lcurXXXX/input/`) and writes the result in the output directory (default is `/home/lcurXXXX/result/`) in a results file that contains the ID of the SLURM job.
+The jobscript runs a wordcount on all files in the defined input directory (default is `/home/username/input/`) and writes the result in the output directory (default is `/home/username/result/`) in a results file that contains the ID of the SLURM job.
 
 To submit the job run the following command:
 
 ```
-sbatch jobscript.sh
+$HOME/jobscript-src.sh
 ```
 
 Once the job is finished you can inspect the result:
 
 ```
-cat result/result-XXXXXXXXX.txt
+cat result/result.txt
 ````
 
 > **_Food for thought:_**
-> * When looking at the results, what do you notice? How would you change the jobscript to get rid of the noise? Would you use bash or change to a completely different implementation?
-> * Downloading and uploading results is a manual process in our current workflow. Is it possible to do this as part of the job? Why would or wouldn't you do this?
+> * Look into this - When looking at the results, what do you notice? How would you change the jobscript to get rid of the noise? Would you use bash or change to a completely different implementation?
+> * Downloading and uploading results is a manual process in our current workflow. Is it possible to do this as part of a job on e.g., Dutch supercomputer Snellius? Why would or wouldn't you do this?
 
 ## 5. Share the results
 Research is mostly a collaborative effort. This means that once you have run your analysis you need to share the results with other collaborators. Start by uploding your result to your _own_ projectfolder on Research Drive:
@@ -119,7 +126,7 @@ Research is mostly a collaborative effort. This means that once you have run you
 Tip! Double check your project folder's name using the rclone lsd command
 
 ```
-rclone copy result/result-XXXXXXXXX.txt "RD:Demo XX (Projectfolder)"
+rclone copy result/result.txt "RD:Demo XX (Projectfolder)"
 ```
 
 Share the result file, or maybe even the source, with the demo account sitting next to you. You can use the [Research Drive documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+share+a+folder+or+file) to find information on how to do that.
