@@ -4,6 +4,7 @@
 - Maithili Kalamkar Stam (SURF)
 - Jorik van Kemenade (SURF)
 - Claudio Cacciari (SURF)
+- Alice Stuart Lee (SURF)
 
 **License**
 Copyright (c) 2023, SURFsara. All rights reserved.
