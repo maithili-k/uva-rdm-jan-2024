@@ -24,7 +24,7 @@ We will continue following the steps you read in the [premise](https://github.co
 ## 1. Prerequisites
 
 - You have an account on Yoda at SURF
-- You have finished [exercise 2](https://github.com/maithili-k/uva-rdm-jan-2024/blob/main/2-data-creation-and-analysis/snellius-researchdrive-exercise.md)
+- You have finished [exercise 2](https://github.com/maithili-k/uva-rdm-jan-2024/blob/main/2-data-creation-and-analysis/researchcloud-researchdrive-exercise.md)
 
 ## 2. Login to the Yoda portal
 
