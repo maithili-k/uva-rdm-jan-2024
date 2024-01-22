@@ -94,6 +94,7 @@ There are a couple of things to note here. First, the source path is placed with
 > * Are you sure you have the permission to 'just use' this dataset (just because you can download something does not mean you can just use it) or did you do something illegal? What kind of licence allows free reuse of data?
 > * What if you did not have the permission to access the data? How would you go about it?
 > * We are using Research Drive via rclone, in our [documentation](https://wiki.surfnet.nl/display/RDRIVE/How+to+upload+or+download+your+files) you can find multiple methods to move data around. What are the advantages and disadvantages of each method and when would you recommend one over the other?
+> * You may have noticed a mount_researchdrive.sh script in your home folder on the workspace, what is that about? Here is a [hint](https://servicedesk.surf.nl/wiki/display/WIKI/Connect+Research+Drive)
 
 ## 4. Run analysis on Research Cloud
 Once you have acquired the data (steps 1 and 2 of the premise, first step of the Research Data Life Cycle), it is time for the next step: analysing the data. To analyse the data, you also need some software or a script. For this project you need a job script that can perform a word count on the acquired data. To get the job script, run the following command: 
