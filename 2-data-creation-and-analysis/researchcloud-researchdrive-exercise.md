@@ -44,10 +44,9 @@ In this assignment we will focus on data management during the active phase of r
 
 In this assignment we will use the SURF Research Cloud as our user interface where we will mount Research Drive and download data, run analysis in the workspace and upload output into Yoda.
 
-Login to the SURF Research Cloud Virtual Machine:
+Login to the SURF Research Cloud Workspace:
 
-For this part of the assignment you need to login to an Ubuntu-based workspace on SURF Research Cloud. You performed all the steps to reach this point in your training earlier this week. If you 
-already have a workspace running, please ssh/login to that workspace and skip the following 2 steps. 
+For this part of the assignment you need to login to an Ubuntu-based workspace on SURF Research Cloud. You performed all the steps to reach this point in your SURF Research CLoud training earlier this week. If you already have a workspace running and can ssh/login to that workspace, you may skip the following 2 steps. 
 
 1] Followed the instructions [here](https://servicedesk.surf.nl/wiki/display/WIKI/Hands-On+for+Introduction+to+SURF+Research+Cloud) to create your own Ubuntu-based workspace, if you do not already have one. 
 2] Then proceed to [login/ssh](https://servicedesk.surf.nl/wiki/display/WIKI/Log+in+to+your+workspace) into the workspace
