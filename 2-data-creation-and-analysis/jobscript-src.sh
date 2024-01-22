@@ -3,7 +3,7 @@
 # 
 # Change these variables if you want to change the input or output directories
 inputdir="$HOME/input"
-outputdir="$HOME/result"
+outputdir="$HOME/result-$USER"
 resultsfile="result.txt"
 
 # Make sure that the outputdir exist
