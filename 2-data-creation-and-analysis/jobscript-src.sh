@@ -3,8 +3,8 @@
 # 
 # Change these variables if you want to change the input or output directories
 inputdir="$HOME/input"
-outputdir="$HOME/result-$USER"
-resultsfile="result.txt"
+outputdir="$HOME/result"
+resultsfile="result-$USER.txt"
 
 # Make sure that the outputdir exist
 mkdir -p $outputdir
