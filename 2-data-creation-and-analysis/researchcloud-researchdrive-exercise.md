@@ -115,7 +115,7 @@ $HOME/jobscript-src.sh
 Once the job is finished you can inspect the result:
 
 ```
-cat result/result.txt
+cat result/result-XXXXX.txt
 ````
 
 > **_Food for thought:_**
