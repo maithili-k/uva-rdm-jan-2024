@@ -9,7 +9,7 @@
 - Jorik van Kemenade (SURF)
 - Claudio Cacciari (SURF)
 - Steven Voges (SURF)
-- Alice Stuart Lee (SURF)
+- Alice Stuart-Lee (SURF)
 
 **License**
 Copyright (c) 2023, SURFsara. All rights reserved.
