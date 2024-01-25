@@ -61,7 +61,7 @@ sudo apt install rclone -y
 
 ## 3. Mount Research Drive on Research Cloud/Download data from Research Drive to Research Cloud
 
-We start with the first step of the Research Data Life Cycle: acquire data that needs to be processed. For this assignment you have to download the data from Research Drive. The most efficient way to move data from Research Drive to Research Cloud is through Rclone, which you installed in the previous step. You need to configure it for Research Drive. You will receive credentials for your Research Drive account during the hands-on session. Please refer to [this guide](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone) in our documentation to configure Rclone. The portal can be found [here](https://demo.data.surfsara.nl) where you can setup the password.
+We start with the first step of the Research Data Life Cycle: acquire data that needs to be processed. For this assignment you have to download the data from Research Drive. The most efficient way to move data from Research Drive to Research Cloud is through Rclone, which you installed in the previous step. You need to configure it for Research Drive. You will receive credentials for your Research Drive account during the hands-on session. Please refer to [this guide](https://wiki.surfnet.nl/display/RDRIVE/Access+Research+Drive+via+Rclone) in our documentation to configure Rclone. Don't forget to setup your password for the configuration in the portal [here](https://demo.data.surfsara.nl).
 
 The final config should look something like this:
 
